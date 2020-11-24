@@ -1,0 +1,258 @@
+<html lang="en">
+
+    <head>
+        <title>UNITY FALLS TRAVELS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
+        <style>
+            body {
+                margin-left: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+
+            }
+            .abcd {
+                height:100vh;
+                width: 100%;
+                background-image: url(11.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: 3s;
+
+
+                animation-name: animate;
+                animation-direction: alternate-reverse;
+                animation-duration: 30s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out ;
+
+            }
+
+            @keyframes animate {
+                0% {
+                    background-image: url(11.jpg);
+                }20% {
+                    background-image: url(12.jpg);
+                }40% {
+                    background-image: url(21.jpg);
+                }60% {
+                    background-image: url(22.jpg);
+                }80% {
+                    background-image: url(33.jpg);
+                }100% {
+                    background-image: url(45.jpg);
+                }
+            }
+            .abc {
+                color: rgb(21, 21, 26) ;
+                text-align: center;
+                font-family: 'Bangers', cursive ;
+                background-color: cornflowerblue;
+            }
+
+
+            .container .btn {
+                background-color: yellowgreen;
+                color: whitesmoke;
+                padding: 16px 20px;
+                width: 25%;
+                margin-top: 15px;
+            }
+            .container .cancel {
+                background-color: red;
+                margin-left: 15px;
+                margin-top: 15px;
+            }
+            .cc {
+                margin-top: 30px;
+            }
+            .popupform {
+                background-color: cadetblue;
+                overflow-y: scroll;
+                size: 500px 400px;
+                overflow-x: hidden;
+                display:none;
+
+            }
+            #inner {
+                height: 500px;
+                width: 600px;
+                margin-left: 50%;
+                margin-top: -40%;
+                overflow-y: auto;
+
+
+            }
+            .outer {
+                text-align: justify;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="abcd">
+            <h1 class="abc" >WELCOME TO UNITY FALLS TRAVELS</h1>
+
+            <h2 >"CLICK HERE" To book your tickets</h2>
+            <button  class="open-button" onclick= "myFunction()" >UNITY FALLS TICKETS</button>
+
+        </div>
+        <div id="inner" >
+        <div class="popupform" id="Registrationform"  >
+
+            <div id="" class="container" >
+
+                 <h3 class="outer" > <u> <b> REGISTER NOW </b> </u> </h3>
+                  <p class="outer" >ENTER YOUR DETAILS FOR YOUR JOURNEY</p>
+
+            <hr>
+        <form>
+
+                    <h3>PASSENGER NAME </h3>
+                <div class="row">
+                    <div class="col">
+                            <input type="text" class="form-control" name="First name" placeholder="Enter ur 1st Name">
+                            <p>FIRST NAME</p>
+                    </div>
+                    <div class="col" >
+                            <input type="text" class="form-control" name="Middle name" placeholder="Enter ur Mid Name">
+                            <p>MIDDLE NAME</p>
+
+                    </div>
+                    <div class="col" >
+                            <input type="text" class="form-control" name="Last name" placeholder="Enter ur last Name" >
+                            <p>LAST NAME</p>
+
+                    </div>
+                </div>
+                          <h3>DATE OF BIRTH</h3>
+                    <div class="form-group" >
+                          <input type="Date" name="form-control" id="date" placeholder="">
+
+                    </div>
+                            <h3>Mail.ID</h3>
+                    <div class="form-group">
+                            <input type="mail" class="form-control" id="mail" placeholder="abcd123@gmail.com" >
+                    </div>
+                            <h3>CONTACT DETAILS</h3>
+                <div class="row" >
+                    <div class="col">
+                          <input type="number" class="form-control" id="number" placeholder="9999988888">
+                          <p>MOBILE NUMBER </p>
+                    </div>
+                    <div class="col" >
+                          <input type="Number" class="form-control" id="number" placeholder="9999900000">
+                          <p>GAURDIAN NUMBER</p>
+
+                    </div>
+
+                </div>
+                           <h3>ADDRESS FOR COMMUNICATION</h3>
+                    <div class="form-group" >
+                            <input type="text" class="form-control" id="street Address1">
+                            <p>STREET ADDRESS  </p>
+
+                    </div>
+                    <div class="form-group">
+                           <input type="text" class="form-control" id="taluk">
+                           <p>TALUK</p>
+
+                    </div>
+                    <div class="form-group">
+                           <input type="text" class="form-control" id="City">
+                           <p>CITY</p>
+
+                    </div>
+                <div class="row" >
+                    <div class="col">
+                           <input type="number" class="form-control" name="PIN Code"  >
+                           <p>PIN CODE </p>
+                    </div>
+                    <div class="col">
+                           <input type="country" class="form-control" name="Country" placeholder="India">
+                           <p>COUNTRY</p>
+                    </div>
+                </div>
+                           <input type="radio" name="gen">MALE
+                           <input type="radio" name="gen">FEMALE
+                           <h3>JOURNEY DEPARTURE DATE</h3>
+            <div class="row" >
+                    <div class="col">
+                            <input type="date"  class="form-control" name="date">
+                    </div>
+                    <div class="col">
+                            <input type="time"  class="form-control" name="time">
+                            <p>HOUR MINUTES</p>
+                    </div>
+            </div>
+
+            <div class="row" >
+                    <div class="col">
+                             <h5>STARTING FROM</h5>
+                             <input type="text"  class="form-control" name="country">
+                    </div>
+                <div class="col">
+                            <h5>PICK UP LOCATION</h5>
+                            <input type="text"  class="form-control" name="City">
+                </div>
+            </div>
+                           <br>
+            <div class="row" >
+                    <div class="col">
+                            <h5>DESTINATION </h5>
+                            <input type="text"  class="form-control" name="country">
+                    </div>
+                <div class="col">
+                           <h5>DROPPING LOCATION</h5>
+                           <input type="text"  class="form-control" name="City">
+                </div>
+            </div>
+                              <br>
+            <div class="row" >
+                    <div class="col">
+                            <h5>AC / NON AC</h5>
+                <select class="form-control" >
+                         <option>Select your</option>
+                         <option>AC </option>
+                         <option>NON-AC </option>
+                </select>
+                    </div>
+                    <div class="col">
+                          <h5>SEATER/SLEEPER </h5>
+                <select class="form-control" >
+                         <option>Select your</option>
+                         <option>Sleeper</option>
+                         <option>Semi-Sleeper</option>
+                </select>
+                    </div>
+            </div>
+
+                        <button type="submit" class="btn">BooK NoW</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+                        <p class="cc"> FOR FURTHER ENQUIRIES MAIL TO <a href="hh">unityfalls@thamizh.com</a> </p>
+                        <a href="rr" class="cc" > MOBILE: 9990009990</a>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    function myFunction() {
+    document.getElementById("Registrationform").style.display = "Block";
+   }
+    function closeForm() {
+    document.getElementById("Registrationform").style.display = "none";
+   }
+</script>
+
+</div>
+
+ </body>
+
+</html>
